@@ -1,0 +1,75 @@
+Aula 03 composer
+
+folder lib, vai receber todas as bibliotecas do composer que é uma framework , que alcelear a integração
+do php com varias plugin como do paypal, mercado pago e outras: entretanto ele não é obrigatoria , pois
+se não redirencionar para lib, as bibliotecar , o composer vai cria a pasta ventor, que vai receber todas as bibliotecas
+
+
+Aula 04 composer
+para utilizar as bibliotecar eu crier o aquivo: composer.json, emportante fala para não colocar comentario nesse aquivo, se não vai da um erro na hora de instalar o composer.    nele vou colocar e chamar a bibliotecar que vou 
+trabalhar utilisando o require, esta todo explicanto  direitinho na documentação no site do composer, Basic usage, já com 
+o exemplo do biblioteca "monolog/monolog": "2.0.*". , é só excluir , a adicionar da sua preferencia, se vc queser 
+adicionar outra é só adicionar "," depois da biblioteca anterior, detro do  "require": .
+
+composer.json 
+
+{
+    "require": {   //  add as bibliotecas
+        "smarty/smarty-dev": "~3.1",    //ex biblioteca smarty depois eu add "," para add outra biblioteca
+        "phpmailer/phpmailer": "^6.8.0"   //essa é outra biblioteca
+     },
+     
+     "config": {  //essa funçao vai fazer que todas as bibliotecas trazida(gerada), pelo o composer seja jogada na pasta "lib/" , por padrão ele iria cria uma pasta "vendorr-dir" e entroduzir lar. 
+        "vendor-dir" : "lib/"
+     },
+     
+     "classmap" : ["model/"]   // todas as classe vai para "model"
+
+}
+
+install composer , pelo o windows powerShell ou cmd .  se emcontra no video 00:04:08
+
+
+
+Aula 04
+
+vai criar composerUpdate.bat:
+
+que ajilizar na hora que for atualizar as bibliotecas novas add, no composer.json. depois de criado e só aperta para fazer update
+
+
+aula 10  00:02:02
+
+mostrando o caminho do pasta de class para o outoload, no composer.json, dota vez que for add a class vc tem que mostra ao autoload com o composerUpdate.bat
+
+"autoload": {  
+        "classmap" : ["model/"] 
+     }
+
+
+
+url amigavel aula 11
+crie um classe com no Rotas, que vai esta pasta model
+
+
+
+Aula 14 
+para conclusão url amigavel criação do .htaccess  . ele tambem não pode ter comentario só o proprio codigo
+o navegador primeiro vai parsa pelo htaccess   que vai fazer o caminho para o index.php , controlando a forma que a url vai ser mostrada.
+não menos importante o htaccess não precisa ser jamado por outras paginas , o navegador e que vai muscar ele primeiro e o mesmo vai fazer o fluquiço e deixando a url bem mais pequena e atraente(amigavel). esse htaccess so trata um parament
+
+
+
+
+model view controller
+
+as chasse do modeo, vai pedir requisição no banco de dados, que vai jogar no controller e o mesmo que vai chamar uma view
+Todos controller vai ter um model, mais não necessarioamente vai ter view
+
+
+
+
+
+Criação de constantes Aula 17   00:03:00 , para quando for hospedar só mudar elas
+
+criar uma classe , Config.class.php
