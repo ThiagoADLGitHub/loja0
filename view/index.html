@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loja</title>
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="tema/style.css">
+</head>
+
+
+
+<body>
+
+    <header class="header" >
+        <a href="#loja" class="logo">Loja thiago</a>
+
+
+        <i class="bx bx-menu" id="menu-icon"></i><!--é o icone  do menu, que tirei no box icons que importei a blibioteca que se encontra no head-->
+
+        <nav class="navbar">
+            <a href="#home" class="active"><i class='bx bx-home-alt-2'></i> Home</a>
+            <a href="#about"><i class='bx bxs-user'></i> Minha conta</a>
+            <a href="#services"><i class='bx bx-cart-alt'></i> Carrinho</a>
+            <a href="#portfolio"><i class='bx bxs-contact'></i> Contato</a>
+            <a href="#portfolio">categorias</a>
+            <ul>
+                <li><a href="">Categorias</a></li>
+                <li><a href="">Categorias</a></li>
+            </ul>
+        </nav>
+        <form class="pesquisar">
+            <!--<label for="pesquisa">Pesquisar:</label>-->
+            <input type="text" id="pesquisa" name="pesquisa" placeholder="  pesquisa">
+            <button class="btn" type="submit" >Buscar</button>
+        </form>
+
+    </header>
+
+
+
+
+    
+        <section class="home" id="home">
+
+            <div class="categorias-conteiner">
+                <div>
+                    <h2><strong>Categorias</strong></h2>
+                </div>
+                <ul>
+                    <li><a href="#">Eletrônicos</a>
+                        <ul>
+                            <li><a href="#">Smartphones</a></li>
+                            <li><a href="#">Computadores</a></li>
+                            <li><a href="#">TVs</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Moda</a>
+                        <ul>
+                            <li><a href="#">Roupas Femininas</a></li>
+                            <li><a href="#">Roupas Masculinas</a></li>
+                            <li><a href="#">Calçados</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Casa e Decoração</a>
+                        <ul>
+                            <li><a href="#">Móveis</a></li>
+                            <li><a href="#">Iluminação</a></li>
+                            <li><a href="#">Calçados</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <div class="produtos" id="produtos">
+                <h1><strong>Produtos em Destaque</strong></h1>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/produto1.jpg" alt="Produto 1">
+                            <h3>Produto 1</h3>
+                            <p>Descrição do Produto 1</p>
+                            <span>R$ 99,99</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/produto2.jpg" alt="Produto 2">
+                            <h3>Produto 2</h3>
+                            <p>Descrição do Produto 2</p>
+                            <span>R$ 149,99</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/produto3.jpg" alt="Produto 3">
+                            <h3>Produto 3</h3>
+                            <p>Descrição do Produto 3</p>
+                            <span>R$ 199,99</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/produto4.jpg" alt="Produto 4">
+                            <h3>Produto 4</h3>
+                            <p>Descrição do Produto 4</p>
+                            <span>R$ 299,99</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+        </section>
+    
+    <footer></footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="tema/script.js"></script>
+</body>
+</html>

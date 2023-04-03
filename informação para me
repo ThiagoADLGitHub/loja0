@@ -5,7 +5,7 @@ do php com varias plugin como do paypal, mercado pago e outras: entretanto ele n
 se não redirencionar para lib, as bibliotecar , o composer vai cria a pasta ventor, que vai receber todas as bibliotecas
 
 
-Aula 04 composer
+Aula 04 composer= é um gerenciador de dependensia(biblioteca)
 para utilizar as bibliotecar eu crier o aquivo: composer.json, emportante fala para não colocar comentario nesse aquivo, se não vai da um erro na hora de instalar o composer.    nele vou colocar e chamar a bibliotecar que vou 
 trabalhar utilisando o require, esta todo explicanto  direitinho na documentação no site do composer, Basic usage, já com 
 o exemplo do biblioteca "monolog/monolog": "2.0.*". , é só excluir , a adicionar da sua preferencia, se vc queser 

@@ -1,0 +1,329 @@
+* {
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline:none;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #404042;
+    --second-bg-color: #000000;
+    --text-color:#fff;
+    --main-color: #0ef;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px auto;
+    max-width: 1200px;
+  }
+  
+.produtos {
+    flex: 1;
+    margin-right: 50px;
+  }
+
+#produtos {
+    flex: 3;
+  }
+
+  section {
+    padding-top: 7rem;
+  }
+
+  section ul {
+    list-style: none;
+  }
+
+  section ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  
+  section ul li a:hover {
+    background-color: #eee;
+  }
+  
+  section ul li ul {
+    display: none;
+  }
+  
+  section ul li:hover ul {
+    display: block;
+    background-color: #eee;
+  }
+  
+  section ul li ul li a {
+    color: #333;
+    padding: 10px;
+  }
+  
+  section ul li ul li a:hover {
+    background-color: #ddd;
+  }
+
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.header {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding:2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header.sticky {/*para javascript*/
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.logo {
+    font-size:2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a {
+    font-size:1.7rem;
+    color: var(--text-color);
+    margin-left:4rem;
+    transition: .3s; /*para transiÃ§Ã£o de color do comando de baixo */
+}
+
+.navbar a:hover ,  /*para modar de color*/
+.navbar a.active{ /*para ficar semple ativado esssa class:active , que esta no Home*/
+    color: var(--main-color);
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+    height: 100%;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+.categorias-conteiner {
+    width: 10rem;
+    background: #0ef;
+    
+}
+
+.categorias-conteiner div h2 {
+    
+    background: black;
+    color: var(--text-color);
+    margin-bottom: .5rem;
+    text-align: center ;
+    padding: .3rem;
+    
+}
+
+.produtos {
+    width: 90%;
+    background: #fff;
+    color: black;
+}
+
+.produtos h1 {
+    margin-top: 0%;
+    padding: .5rem;
+    text-align: center;
+}
+
+.produtos ul li {
+    margin-left: .5rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.produtos ul li a{
+    width: 20%;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
+
+.footer-text p{
+    font-size: 1.6rem;
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-iconTop a:hover {
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+}
+
+/* BREAKPOINTS */
+
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px){
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 768px){
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top:100%;
+        /*left: 0;*/
+        width: 50%;
+        padding: 1rem 3%;
+        /*background: var(--bg-color); */
+        background: hsla(192, 100%, 62%, 0.1);    /* hsl   deixar o fundo transparente*/
+        backdrop-filter:blur(1rem);    /* deixar foscor */
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .2);
+        display: none; /* ocultar o menu*/
+        /*position: absolute;*/
+        left: 50%;
+        /*opacity: 0;
+        /*top: 80px;*/
+        text-align: center;
+    }
+    .navbar.show {    /*quando for chamado no javascript o menu vai ser mostrado*/
+        display: block;
+      }
+      
+
+    /*.navbar.show-menu {    /*era se eu usase a opacidade para ocultar o menu*
+        opacity: 1;
+    }
+
+    .navbar.active {   /* se usase o primeiro script.js pois ele tem outra programaÃ§Ã£o para ocultar o menu entretanto eu estou usando script2.js
+        display: block;
+    }*/
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    /*deixar a logo no centro*/
+
+    .logo {
+        position: relative;
+        
+        left: 35%;
+    }
+
+    .home {
+        flex-direction: column; /*ele organizar mais correntamente jogando imagem para baixo*/
+    }
+
+    
+
+@media (max-width: 617px) {
+   
+}
+
+@media (max-width: 450px){
+    html {
+        font-size: 50%;
+    }
+    .contact form .input-box input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 365px){
+    .footer {
+        flex-direction: column-reverse;
+    }
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
