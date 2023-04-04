@@ -10,7 +10,7 @@
 }
 
 :root {
-    --bg-color: #404042;
+    --bg-color: #ffffff;
     --second-bg-color: #000000;
     --text-color:#fff;
     --main-color: #0ef;
@@ -32,7 +32,8 @@ section {
     flex-direction: row;
     justify-content: space-between;
     margin: 50px auto;
-    max-width: 1200px;
+    max-width: 100%;
+    padding-left: 5rem;
   }
   
 .produtos {
@@ -43,6 +44,41 @@ section {
 #produtos {
     flex: 3;
   }
+
+  nav ul li ul {
+    display: none;
+  }
+  
+  nav ul li:hover ul {
+    display: block;
+    position: absolute;
+    background-color: var(--main-color);
+  }
+
+/*chat GPT
+  .navbar ul {
+    display: flex;
+    align-items: center; /* alinha verticalmente no centro *
+    justify-content: flex-end; /* alinha horizontalmente à direita *
+  }
+  
+  .navbar li {
+    position: relative;
+  }
+  
+  .navbar li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+  }
+  
+  .navbar li:hover > ul {
+    display: block;
+  }
+
+*/
+  
 
   section {
     padding-top: 7rem;
@@ -94,7 +130,7 @@ section {
     left: 0;
     width: 100%;
     padding:2rem 9%;
-    background: var(--bg-color);
+    background: var(--second-bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -123,6 +159,7 @@ section {
 .navbar a.active{ /*para ficar semple ativado esssa class:active , que esta no Home*/
     color: var(--main-color);
 }
+
 
 .home {
     display: flex;
@@ -185,14 +222,15 @@ li{
 
 .produtos ul li {
     margin-left: .5rem;
-    display: flex;
-    justify-content: center;
-
+    margin-right: .5rem;
+    display: inline-flex;
+    width: 33.3rem;
 }
 
-.produtos ul li a{
-    width: 20%;
+.produtos ul li a {
+    text-align: center;
 }
+
 
 
 .footer {
@@ -208,24 +246,25 @@ li{
     font-size: 1.6rem;
 }
 
-.footer-iconTop a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: .8rem;
-    background: var(--main-color);
-    border-radius: .8rem;
-    transition: .5s ease;
+/* BREAKPOINTS */
+
+@media (max-width: 1293px){
+    .pesquisar {
+        position: absolute;
+        top:80%;
+        width: 100%;
+        padding: 1rem 3%;
+        /*background: hsla(192, 100%, 62%, 0.1);    /* hsl   deixar o fundo transparente*/
+        /*backdrop-filter:blur(1rem);    /* deixar foscor */
+        /*border-top: .1rem solid rgba(0, 0, 0, .2);
+        /*box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .2);*/
+        left: 0%;
+        text-align: center;
+        background: var(--second-bg-color);
+        align-items: center;
+    }
 }
 
-.footer-iconTop a:hover {
-    box-shadow: 0 0 1rem var(--main-color);
-}
-
-.footer-iconTop a i {
-    font-size: 2.4rem;
-    color: var(--second-bg-color);
-}
 
 /* BREAKPOINTS */
 
@@ -303,6 +342,8 @@ li{
         flex-direction: column; /*ele organizar mais correntamente jogando imagem para baixo*/
     }
 
+   
+}
     
 
 @media (max-width: 617px) {
@@ -313,9 +354,7 @@ li{
     html {
         font-size: 50%;
     }
-    .contact form .input-box input {
-        width: 100%;
-    }
+   
 }
 
 @media (max-width: 365px){

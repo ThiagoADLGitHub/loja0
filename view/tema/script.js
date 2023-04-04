@@ -10,3 +10,11 @@ menuIcon.addEventListener('click', () => {
 
 
 
+const menuCategoria = document.querySelector('#menu-categoria');
+const navCategoria = document.querySelector('.nav-categoria');
+
+menuIcon.addEventListener('click', () => {
+    menuCategoria.classList.toggle('bx-x');   /** a que e chama , para aparecer o x no menu */
+    navCategoria.classList.toggle('show');    /** chama o menu */
+});
+
