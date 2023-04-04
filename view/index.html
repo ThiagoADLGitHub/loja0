@@ -8,6 +8,8 @@
     <!--box icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     <!--css da pagina-->
     <link rel="stylesheet" href="tema/style.css">
 </head>
@@ -28,7 +30,7 @@
             <a href="#services"><i class='bx bx-cart-alt'></i> Carrinho</a>
             <a href="#portfolio"><i class='bx bxs-contact'></i> Contato</a>
             <ul>
-                <li><a href="#">categorias</a>
+                <li><a href="#">categorias <i class='bx bx-chevron-down'></i></a>
                     <ul>
                         <li><a href="#">Smartphones</a></li>
                         <li><a href="#">Computadores</a></li>
@@ -45,31 +47,30 @@
     </header>
 
 
-
-
     
         <section class="home" id="home">
+            
 
             <div class="categorias-conteiner">
                 <div>
                     <h2><strong>Categorias</strong></h2>
                 </div>
                 <ul>
-                    <li><a href="#">Eletrônicos</a>
+                    <li><a href="#"><i class='bx bx-chevron-right'></i> Eletrônicos </a>
                         <ul>
                             <li><a href="#">Smartphones</a></li>
                             <li><a href="#">Computadores</a></li>
                             <li><a href="#">TVs</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Moda</a>
+                    <li><a href="#"><i class='bx bx-chevron-right'></i> Moda</a>
                         <ul>
                             <li><a href="#">Roupas Femininas</a></li>
                             <li><a href="#">Roupas Masculinas</a></li>
                             <li><a href="#">Calçados</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Casa e Decoração</a>
+                    <li><a href="#"><i class='bx bx-chevron-right'></i> Casa e Decoração</a>
                         <ul>
                             <li><a href="#">Móveis</a></li>
                             <li><a href="#">Iluminação</a></li>
@@ -82,6 +83,13 @@
 
 
             <div class="produtos" id="produtos">
+
+                <div class="retorno-produto">
+                    <a href=""><i class='bx bx-home-alt-2'><strong> HOME</strong></i></a>
+                    <a href=""><strong>Produstos</strong></a>
+                    <a href=""><strong>info</strong></a>
+                </div>
+
                 <h1><strong>Produtos em Destaque</strong></h1>
                 <ul>
                     <li>
@@ -117,11 +125,22 @@
                         </a>
                     </li>
                 </ul>
+
+               
             </div>
-
-
-
+            
         </section>
+
+
+        <nav class="paginacao" aria-label="Navegação de página exemplo">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+            </ul>
+        </nav>
     
     <footer></footer>
 

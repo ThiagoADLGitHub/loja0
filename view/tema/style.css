@@ -36,23 +36,19 @@ section {
     padding-left: 5rem;
   }
   
-.produtos {
-    flex: 1;
-    margin-right: 50px;
-  }
 
 #produtos {
     flex: 3;
   }
 
-  nav ul li ul {
+  .navbar ul li ul {
     display: none;
   }
   
-  nav ul li:hover ul {
+  .navbar ul li:hover ul {
     display: block;
     position: absolute;
-    background-color: var(--main-color);
+    background-color: var(--second-bg-color);
   }
 
 /*chat GPT
@@ -82,6 +78,7 @@ section {
 
   section {
     padding-top: 7rem;
+    margin-bottom: .2rem;
   }
 
   section ul {
@@ -193,7 +190,7 @@ li{
 }
 
 .categorias-conteiner {
-    width: 10rem;
+    width: 15rem;
     background: #0ef;
     
 }
@@ -208,10 +205,23 @@ li{
     
 }
 
+.categorias-conteiner ul li {
+    font-size: 1.5rem;
+    
+}
+
+.retorno-produto {
+    font-size: 2rem;
+    background: rgb(168, 164, 164);
+}
+
 .produtos {
+    flex: 1;
+    margin-right: 5rem;
     width: 90%;
-    background: #fff;
+    background: #eb2020;
     color: black;
+    border: 1px solid black;
 }
 
 .produtos h1 {
@@ -227,11 +237,16 @@ li{
     width: 33.3rem;
 }
 
+
 .produtos ul li a {
     text-align: center;
 }
 
-
+.paginacao ul {
+    display: flex;
+    align-items: center; /* alinha verticalmente no centro */
+    justify-content: center; /* alinha horizontalmente à direita */
+  }
 
 .footer {
     display: flex;
